@@ -39,6 +39,16 @@ namespace WebApiLibros.Controllers
             return autor;
         }
 
+        //GET por edad api/autor/50 --> /edad
+        [HttpGet("listado/{edad}")]
+        public ActionResult<IEnumerable<Autor>> GetEdad(int edad)
+        {
+            List <Autor> autorList = (from a in context.Autores
+                           where a.Edad == edad
+                           select a).ToList();
+            return autorList;
+        }
+
         //Insert
         //POST api/autor
         [HttpPost]
