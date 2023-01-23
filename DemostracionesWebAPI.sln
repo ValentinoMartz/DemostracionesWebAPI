@@ -5,7 +5,11 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WSAlumnos", "WSAlumnos\WSAlumnos.csproj", "{DB7FB12F-1BF3-4D56-8699-680663AE2DA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiLibros", "WebApiLibros\WebApiLibros.csproj", "{5DA2A3ED-905F-460E-8896-710FF69B6AEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiLibros", "WebApiLibros\WebApiLibros.csproj", "{5DA2A3ED-905F-460E-8896-710FF69B6AEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiNorthwind", "WebApiNorthwind\WebApiNorthwind.csproj", "{CE62A35B-093F-4173-A453-7863E7C9969A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiPubs", "WebApiPubs\WebApiPubs.csproj", "{976FE9E2-C08F-412A-A0FA-9C9CE2A942BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{5DA2A3ED-905F-460E-8896-710FF69B6AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DA2A3ED-905F-460E-8896-710FF69B6AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DA2A3ED-905F-460E-8896-710FF69B6AEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE62A35B-093F-4173-A453-7863E7C9969A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE62A35B-093F-4173-A453-7863E7C9969A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE62A35B-093F-4173-A453-7863E7C9969A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE62A35B-093F-4173-A453-7863E7C9969A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{976FE9E2-C08F-412A-A0FA-9C9CE2A942BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{976FE9E2-C08F-412A-A0FA-9C9CE2A942BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{976FE9E2-C08F-412A-A0FA-9C9CE2A942BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{976FE9E2-C08F-412A-A0FA-9C9CE2A942BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
