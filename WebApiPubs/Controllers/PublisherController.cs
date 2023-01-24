@@ -26,6 +26,13 @@ namespace WebApiPubs.Controllers
             return context.Publishers.ToList();
         }
 
+        [HttpGet("{ID}")]
+        public ActionResult<Publisher> GetById(string ID)
+        {
+            Publisher publisher = context.Publishers.Include(x => x.Titles).FirstOrDefault(x => x.PubId == ID);
+            return publisher;
+        }
+
         [HttpPost]
         public ActionResult<Publisher> Post(Publisher publisher)
         {

@@ -31,10 +31,12 @@ namespace WebApiLibros.Controllers
         [HttpGet("autores/{autorId}")]
         public ActionResult<Libro> GetbyAutorId(int autorId)
         {
-            Libro libro = (from a in context.Libros
-                           where a.AutorId == autorId
-                           select a).SingleOrDefault();
-            return libro;
+            //lo trae junto con el autor del Libro
+            var resultado = context.Libros.Include(x => x.Autor).FirstOrDefault(x => x.AutorId == autorId);
+            //Libro libro = (from a in context.Libros
+            //               where a.AutorId == autorId
+            //               select a).SingleOrDefault();
+            return resultado;
         }
 
         //GET ID 
