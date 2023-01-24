@@ -23,7 +23,20 @@ namespace WebApiPubs.Controllers
         {
             return context.Stores.ToList();
         }
+
         //Post
+        [HttpPost]
+        public ActionResult<Store> Post(Store store)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            context.Stores.Add(store);
+            context.SaveChanges();
+            return Ok();
+        }
+
         //Put
         //Delete
 
